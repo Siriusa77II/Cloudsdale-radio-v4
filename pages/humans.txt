@@ -1,0 +1,26 @@
+/* TEAM */
+
+
+Founder: Quentin "Sirius" Silva
+Site: https://Siriushd.net
+Twitter: @Sirius242
+Location: Lille, France
+
+
+/* THANKS */
+
+
+Name: NitroGroup.Fr (Hosting)
+Name: Snowfox
+Name: Unfdev
+Name: AzuraCast
+
+
+
+/* SITE */
+
+
+Last update: 2017/05/18
+Standards: HTML5, CSS3, OctoberCMS
+Components: Laravel, jQuery, Boostrap, PHP
+Software: OctoberCMS, Sublime Text3, Photoshop
