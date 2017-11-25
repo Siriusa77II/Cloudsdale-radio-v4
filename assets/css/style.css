@@ -4,6 +4,7 @@
     background: url(/themes/cloudsdale-radio-v5/assets/img/sunrise2.jpg) no-repeat center fixed; 
     -webkit-background-size: cover; /* pour anciens Chrome et Safari */
     background-size: cover; /* version standardisée */
+    overflow: hidden;
   }
   .txtbg {
     background-color: rgb(206, 206, 206);
