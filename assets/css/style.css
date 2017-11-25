@@ -7,7 +7,12 @@
 	}
 	.txtbg {
 		background-color: rgb(206, 206, 206);
+    left: 20px;
+    right: 20px;
 	}
+  .welcome {
+    text-align: center;
+  }
   .footer {
     background-color: #000 !important;
     position: block;
