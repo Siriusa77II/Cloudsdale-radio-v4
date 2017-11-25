@@ -4,7 +4,7 @@
     background: url(/themes/cloudsdale-radio-v5/assets/img/sunrise2.jpg) no-repeat center fixed; 
     -webkit-background-size: cover; /* pour anciens Chrome et Safari */
     background-size: cover; /* version standardisée */
-    overflow: hidden;
+    overflow-x: hidden;
   }
   .logo {
     margin-bottom: 10%
@@ -37,5 +37,5 @@
     width: 100%; 
     text-align: left; 
     bottom: 0px;
-    overflow: hidden;
+    overflow: hidden-x;
   }
