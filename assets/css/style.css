@@ -1,15 +1,15 @@
-	body { 
-		margin:0;
-		padding:0;
-		background: url(/themes/cloudsdale-radio-v5/assets/img/sunrise2.jpg) no-repeat center fixed; 
-		-webkit-background-size: cover; /* pour anciens Chrome et Safari */
-		background-size: cover; /* version standardisée */
-	}
-	.txtbg {
-		background-color: rgb(206, 206, 206);
+  body { 
+    margin:0;
+    padding:0;
+    background: url(/themes/cloudsdale-radio-v5/assets/img/sunrise2.jpg) no-repeat center fixed; 
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+    background-size: cover; /* version standardisée */
+  }
+  .txtbg {
+    background-color: rgb(206, 206, 206);
     left: 20px;
     right: 20px;
-	}
+  }
   .welcome {
     text-align: center;
   }
