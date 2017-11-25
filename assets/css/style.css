@@ -13,9 +13,14 @@
   .welcome {
     text-align: center;
   }
-  .site-footer {
-    background-color: black !important;
-    position: block;
-    left: 0px;
-    right: 0px;
+  .footer {
+    background-color: #1F1F1F; 
+    padding: 10px; 
+    boder-top: 1px;
+    border-color: white; 
+    color: white; 
+    width: 100%; 
+    text-align: left; 
+    position: block; 
+    bottom: 0px;
   }
