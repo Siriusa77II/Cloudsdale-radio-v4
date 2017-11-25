@@ -1,0 +1,183 @@
+title = "radio"
+url = "/radio"
+is_hidden = 0
+==
+<html>
+<head>
+	<title>Cloudsdale Radio</title>
+	<meta name="robots" content="noindex" />
+  <meta name="viewport" content="width=500, initial-scale=1">
+  <script type="text/javascript" src="/themes/cloudsdale-radio-v5/assets/player/script/soundmanager2.js"></script>
+  <script src="/themes/cloudsdale-radio-v5/assets/player/script/bar-ui.js"></script>
+  <link rel="stylesheet" href="/themes/cloudsdale-radio-v5/assets/player/css/bar-ui.css" />
+  <link href="/themes/cloudsdale-radio-v5/assets/css/bootstrap.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <style>
+  .sm2-bar-ui {
+   font-size: 16px;
+ }
+ .sm2-bar-ui .sm2-main-controls,
+ .sm2-bar-ui .sm2-playlist-drawer {
+   background-color: #2288cc;
+ }
+ .sm2-bar-ui .sm2-inline-texture {
+   background: transparent;
+ }
+ body { 
+  margin:0;
+  padding:0;
+  background: url(https://pre00.deviantart.net/b286/th/pre/f/2012/342/f/7/ponyville_dawn__snowy_by_stinkehund-d5ne9hb.png) no-repeat center fixed;
+  -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+  background-size: cover; /* version standardisée */
+  overflow-x: hidden;
+}
+.footer {
+  background-color: #1F1F1F; 
+  padding: 10px; 
+  boder-top: 3px;
+  border-color: white; 
+  color: white; 
+  width: 100%; 
+  text-align: left;
+  position: absolute;
+  bottom: 0px;
+  overflow: hidden-x;
+  margin-top: 5%;
+}
+</style>
+</head>
+<body>
+	<center>
+		<h1>Cloudsdale Radio</h1>
+		<!--PLAYER-->
+    <div class="sm2-bar-ui flat">
+     <div class="bd sm2-main-controls">
+      <div class="sm2-inline-texture"></div>
+      <div class="sm2-inline-gradient"></div>
+      <div class="sm2-inline-element sm2-button-element">
+       <div class="sm2-button-bd">
+        <a href="#play" class="sm2-inline-button play-pause">Play / pause</a>
+      </div>
+    </div>
+    <div class="sm2-inline-element sm2-inline-status">
+     <div class="sm2-playlist">
+      <div class="sm2-playlist-target">
+       <!-- playlist <ul> + <li> markup will be injected here -->
+         <!-- if you want default / non-JS content, you can put that here. -->
+         <ul>
+           <li></li>
+         </ul>
+         <noscript><p>JavaScript is required.</p></noscript>
+       </div>
+     </div>
+     <div class="sm2-progress">
+      <div class="sm2-row">
+        <div class="sm2-inline-time">CR Live</div>
+        <div class="sm2-progress-bd">
+          <div class="sm2-progress-track">
+           <div class="sm2-progress-bar"></div>
+           <div class="sm2-progress-ball"><div class="icon-overlay"></div></div>
+         </div>
+       </div>
+       <div class="sm2-inline-duration">00:00</div>
+     </div>
+   </div>
+ </div>
+ <div class="sm2-inline-element sm2-button-element sm2-volume">
+   <div class="sm2-button-bd">
+    <span class="sm2-inline-button sm2-volume-control volume-shade"></span>
+    <a href="#volume" class="sm2-inline-button sm2-volume-control">volume</a>
+  </div>
+</div>
+<div class="sm2-inline-element sm2-button-element sm2-menu">
+ <div class="sm2-button-bd">
+  <a href="#menu" class="sm2-inline-button menu">menu</a>
+</div>
+</div>
+</div>
+<div class="bd sm2-playlist-drawer sm2-element">
+  <div class="sm2-inline-texture">
+   <div class="sm2-box-shadow"></div>
+ </div>
+ <!-- playlist content is mirrored here -->
+ <div class="sm2-playlist-wrapper">
+  <ul class="sm2-playlist-bd">
+   <!-- example: playable link, "buy" link, "download" link -->
+   <li><a href="http://diffusion.cloudsdaleradio.com/radio/8010/radio.mp3">Cloudsdale Radio - Medium Quality </a></li>
+   <!-- example: playable link, "download" link -->
+   <li>
+    <div class="sm2-row">
+     <div class="sm2-col sm2-wide">
+       <!-- standard one-line items, no extra links -->  
+       <li><a href="http://diffusion.cloudsdaleradio.com:8000/radio.mp3">Cloudsdale Radio - Hight Quality </a></li>
+       <li><a href="http://diffusion.cloudsdaleradio.com:8000/radio.mp3">Cloudsdale Radio - Low Quality </a></li>
+     </ul>
+   </div>
+   <div class="sm2-extra-controls">
+     <div class="bd">
+      <div class="sm2-inline-element sm2-button-element">
+       <a href="#prev" title="Previous" class="sm2-inline-button previous">&lt; previous</a>
+     </div>
+     <div class="sm2-inline-element sm2-button-element">
+       <a href="#next" title="Next" class="sm2-inline-button next">&gt; next</a>
+     </div>
+     <!-- not implemented -->
+    <!--
+    <div class="sm2-inline-element sm2-button-element disabled">
+     <div class="sm2-button-bd">
+      <a href="#repeat" title="Repeat playlist" class="sm2-inline-button repeat">&infin; repeat</a>
+     </div>
+    </div>
+  -->
+  <!-- not implemented -->
+    <!--
+    <div class="sm2-inline-element sm2-button-element disabled">
+     <a href="#shuffle" title="Shuffle" class="sm2-inline-button shuffle">shuffle</a>
+    </div>
+  -->
+</div>
+</div>
+</div>
+</div>
+<!--END PLAYER-->
+<!--NOW PLAYING-->
+<div style="background-color: white; border-radius: 3px; margin: 5%;">
+  <p class="navbar-text"><h3><strong>Now Playing : </strong><p data-shoutcast-value="songtitle"></p></div>
+  </center>
+  <div class="footer">
+    <div class="row">
+      <nav role="navigation" class="col-md-offset-1 col-md-5">
+        <a href="http://mylittlepony.hasbro.com/en-us">Copyright &copy; My Little Pony Frienship is magic™ Hasbro</a> &mdash; Tous droits réservés<br>
+        Copyright &copy; tout droit sur les Musique/Creation vont a leur artiste respectifs.<br>
+        Copyright <a href="http://www.copyrighted.com/copyrights/view/gahl-yxox-vlsm-deb9">&copy; Cloudsdale Radio</a> 2016 - 2018<br>
+        Copyright &copy; Site devlopper par Sirius • Version 4.Winter Edition <br> Cloudsdale radio est une filiale NitroGoup<br>
+        <a href="/site-map">Site Map</a> • <!--<a href="#Show">Liste des Programe</a> •--><a href="/remerciement">Remerciement</a> • <a href="/update">Updates</a> • <a href="/server">Serveur</a> • <a href="/crew">Staff</a> • <a href="/humans.txt"><img src="http://humanstxt.org/img/oficial-logos/humanstxt-transparent-1ink.png"> </a>
+      </nav>
+      <div class="copyright col-md-offset-3 col-md-2">
+        Powered by NitroGroup<br>
+      </div>
+    </div>
+  </div>
+  <!-- jQuery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!--BoostrapJS-->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!--player JS-->
+  <script src="/themes/cloudsdale-radio-v5/assets/player/script/bar-ui.js"></script>
+  <script type="text/javascript" src="/themes/cloudsdale-radio-v5/assets/player/script/soundmanager2.js"></script>
+  <!--custom JS-->
+  <script type="text/javascript" src="/themes/cloudsdale-radio-v5/assets/js/popup.js"></script>
+  <script src="http://equestriaFM.com/themes/equestriafm/assets/cloudsdaleradio/jquery.shoutcast.easy.min.js?host=diffusion.cloudsdaleradio.com&port=8000&stream=1"></script>
+</body>
+</html>
+    <!-- NOTE IMPORTANTE: On est pas la pour faire concurence, mais j'ai cru entendre dire plusieurs fois, que certaine radio n'etait pas tres aprecier du fandom (ou du moins par certains), donc je ré-ouvre Cloudsdale Radio pour les gens qui voudrais une radio Francophone sympas, il ne sert a rien de venire cracher sur le projet une fois de plus en me traitant d'incapable, et en rabaissant la radio car elle risque de vous faire de l'ombre, elle vous en fait et en faisait deja.
+    Je crée des radio car j'adore la radio, pas pour me battre, donc la prochaine fois vous etes sympas et allez gérré vos propre projet avant de venire cracher sur celui ci. je revais deja de faire de la radio, alors que vous n'avez méme pas encore toucher a une lignes de code.
+    j'ai crée des radio avant et apres la fermeture de celle ci.
+    
+    Quoi qui arrive la radio seras ré-ouverte, que cela vous plaise ou non. donc faite en sorte qu'on ai pas a se tapper dessus et que tout ce passe bien. peut etre une future collaboration, qui sais? 
+    -Sirius
+    PS: Je suis toujours pret a discuter 
+    -> Discord: Sirius#0763 
+    -> NitroGroup: https://discord.gg/fcUtJQd 
+    -> TS: 51.15.148.196
+    -->

@@ -1,32 +1,45 @@
   body { 
     margin:0;
     padding:0;
-    background: url(/themes/cloudsdale-radio-v5/assets/img/sunrise2.jpg) no-repeat center fixed; 
+/*    background: url(/themes/cloudsdale-radio-v5/assets/img/backgound.jpg) no-repeat center fixed;  */
+    background: url(https://pre00.deviantart.net/b286/th/pre/f/2012/342/f/7/ponyville_dawn__snowy_by_stinkehund-d5ne9hb.png) no-repeat center fixed;
     -webkit-background-size: cover; /* pour anciens Chrome et Safari */
     background-size: cover; /* version standardisée */
     overflow-x: hidden;
   }
   .logo {
-    margin-bottom: 10%
+    margin-bottom: 5%
   }
   .txtbg {
-    background-color: rgb(206, 206, 206);
+    background-color: #fff;
     left: 20px;
     right: 20px;
+    border-radius: 5px;
   }
   .welcome {
     text-align: center;
     margin-right: 3%;
   }
+.text-left {
+  text-align: left;
+}
 
-  .footer {
-    background-color: #1F1F1F; 
-    padding: 10px; 
-    boder-top: 3px;
-    border-color: white; 
-    color: white; 
-    width: 100%; 
-    text-align: left; 
-    bottom: 0px;
-    overflow: hidden-x;
-  }
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+.footer {
+  background-color: #1F1F1F; 
+  padding: 10px; 
+  boder-top: 3px;
+  border-color: white; 
+  color: white; 
+  width: 100%; 
+  text-align: left; 
+  bottom: 0px;
+  overflow: hidden-x;
+  margin-top: 5%;
+}
