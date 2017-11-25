@@ -6,6 +6,9 @@
     background-size: cover; /* version standardisée */
     overflow: hidden;
   }
+  .logo {
+    margin-bottom: 10%
+  }
   .txtbg {
     background-color: rgb(206, 206, 206);
     left: 20px;
