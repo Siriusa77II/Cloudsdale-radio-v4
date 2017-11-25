@@ -17,11 +17,10 @@
   .footer {
     background-color: #1F1F1F; 
     padding: 10px; 
-    boder-top: 1px;
+    boder-top: 3px;
     border-color: white; 
     color: white; 
     width: 100%; 
     text-align: left; 
-    position: relative; 
     bottom: 0px;
   }
